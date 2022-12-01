@@ -23,9 +23,9 @@ public abstract class DailyTask<A, B> {
         return solveTaskOne(parsed);
     }
 
-    abstract String solveTaskOne(A parsed);
+    public abstract String solveTaskOne(A parsed);
 
-    abstract A parseInputOne(List<String> input);
+    public abstract A parseInputOne(List<String> input);
 
 
 
@@ -40,9 +40,9 @@ public abstract class DailyTask<A, B> {
         return solveTaskTwo(parsed);
     }
 
-    abstract String solveTaskTwo(B parsed);
+    public abstract String solveTaskTwo(B parsed);
 
-    abstract B parseInputTwo(List<String> input);
+    public abstract B parseInputTwo(List<String> input);
 
     private static List<String> splitInput(String input) {
         return Arrays.stream(input.split("\n")).toList();
