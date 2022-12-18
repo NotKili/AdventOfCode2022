@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class TaskSeventeen extends DailyTask<String, String> {
     public TaskSeventeen() {
-        super(InputSeventeen.TASK_ONE, InputSeventeen.TASK_ONE);
+        super(InputSeventeen.TASK_ONE, InputSeventeen.TASK_TWO);
     }
 
     @Override
@@ -92,13 +92,11 @@ public class TaskSeventeen extends DailyTask<String, String> {
                         break;
                     }
                 }
-
                 if (hasFound) {
                     return toTest;
                 }
             }
         }
-
         return null;
     }
 
